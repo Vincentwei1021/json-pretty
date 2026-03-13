@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Blog — JSON Tips & Developer Guides | JSONPretty",
   description: "Practical guides on JSON formatting, validation, and best practices for developers and data engineers.",
+  alternates: { canonical: "/blog" },
 };
 
 const posts = [

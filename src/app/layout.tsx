@@ -19,13 +19,25 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "JSONPretty",
     type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "JSONPretty" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "JSON Formatter & Validator | JSONPretty",
     description: "Pretty print, validate, and minify JSON. 100% client-side, no data uploaded.",
+    images: ["/opengraph-image"],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

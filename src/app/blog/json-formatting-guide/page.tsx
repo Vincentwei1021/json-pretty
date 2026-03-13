@@ -6,12 +6,28 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "The Complete Guide to JSON Formatting: Pretty Print, Validate & Minify",
   description: "Learn everything about JSON formatting — from basic pretty printing to advanced validation techniques. A practical guide for developers working with JSON data.",
+  keywords: ["json formatter", "pretty print json", "json validator", "json beautifier", "format json"],
   alternates: { canonical: "/blog/json-formatting-guide" },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The Complete Guide to JSON Formatting: Pretty Print, Validate & Minify",
+  description: "Learn everything about JSON formatting — from basic pretty printing to advanced validation techniques. A practical guide for developers working with JSON data.",
+  datePublished: "2026-03-10",
+  dateModified: "2026-03-10",
+  author: { "@type": "Organization", name: "JSONPretty" },
+  publisher: { "@type": "Organization", name: "JSONPretty" },
 };
 
 export default function JsonFormattingGuide() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Header />
       <main className="px-4 py-12 sm:px-6 sm:py-16">
         <article className="prose prose-gray dark:prose-invert mx-auto max-w-3xl">

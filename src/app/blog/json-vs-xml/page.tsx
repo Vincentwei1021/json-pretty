@@ -6,12 +6,28 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "JSON vs XML in 2026: Which Data Format Should You Use?",
   description: "A comprehensive comparison of JSON and XML for modern applications. Pros, cons, performance benchmarks, and when to use each data format in 2026.",
+  keywords: ["json vs xml", "json xml comparison", "data format", "json advantages", "xml vs json 2026"],
   alternates: { canonical: "/blog/json-vs-xml" },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "JSON vs XML in 2026: Which Data Format Should You Use?",
+  description: "A comprehensive comparison of JSON and XML for modern applications. Pros, cons, performance benchmarks, and when to use each data format in 2026.",
+  datePublished: "2026-03-08",
+  dateModified: "2026-03-08",
+  author: { "@type": "Organization", name: "JSONPretty" },
+  publisher: { "@type": "Organization", name: "JSONPretty" },
 };
 
 export default function JsonVsXml() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Header />
       <main className="px-4 py-12 sm:px-6 sm:py-16">
         <article className="prose prose-gray dark:prose-invert mx-auto max-w-3xl">

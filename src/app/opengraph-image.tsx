@@ -10,7 +10,7 @@ export default function Image() {
     (
       <div
         style={{
-          background: "linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 100%)",
+          background: "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -20,7 +20,7 @@ export default function Image() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 96, marginBottom: 16 }}>{"{ }"}</div>
+        <div style={{ fontSize: 96, marginBottom: 16 }}>{"{}"}</div>
         <div
           style={{
             fontSize: 64,
@@ -39,7 +39,7 @@ export default function Image() {
             fontWeight: 400,
           }}
         >
-          Format, Validate &amp; Minify JSON Online
+          Format, Validate &amp; Minify JSON — 100% Private
         </div>
         <div
           style={{

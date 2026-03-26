@@ -4,6 +4,7 @@ import JsonFormatter from "@/components/JsonFormatter";
 import FAQ from "@/components/FAQ";
 import { faqData } from "@/data/faq";
 import Footer from "@/components/Footer";
+import DevToolsNav from "@/components/DevToolsNav";
 
 const webAppSchema = {
   "@context": "https://schema.org",
@@ -117,6 +118,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <DevToolsNav currentSlug="json-pretty" />
       </main>
       <Footer />
 

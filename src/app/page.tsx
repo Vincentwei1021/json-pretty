@@ -1,3 +1,4 @@
+import AdBanner from "@/components/AdBanner";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import JsonFormatter from "@/components/JsonFormatter";
@@ -47,6 +48,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <AdBanner className="mx-auto max-w-5xl px-4 py-4" />
         <JsonFormatter />
 
         {/* Features section */}
@@ -119,6 +121,7 @@ export default function Home() {
           </div>
         </section>
         <DevToolsNav currentSlug="json-pretty" />
+        <AdBanner className="mx-auto max-w-5xl px-4 py-6" />
       </main>
       <Footer />
 
